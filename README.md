@@ -1,8 +1,8 @@
 # vidpie
 
-An installable video editor built on [Remotion](https://remotion.dev) and [remotion-picker](https://github.com/ashokDevs/remotion-picker).
+An installable video editor built on [Remotion](https://remotion.dev).
 
-Click anything in the preview and jump straight to the source that renders it. Vidpie packages Remotion Studio with the picker wired in by default, so that workflow is there from the first `install`, no manual setup required.
+Click anything in the preview and jump straight to the source that renders it. Vidpie packages Remotion Studio with that picking workflow wired in by default, so it's there from the first `install`, no manual setup required.
 
 Vidpie is not a Remotion alternative. It runs Remotion Studio under the hood; everything you see is Remotion.
 
