@@ -1,0 +1,9 @@
+{
+  "name": "vidpie-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter vidpie dev",
+    "build": "pnpm --filter vidpie build",
+    "test": "pnpm -r test"
+  }
+}
