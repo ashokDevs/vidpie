@@ -1,9 +1,30 @@
 {
   "name": "vidpie-monorepo",
   "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "pnpm --filter vidpie dev",
-    "build": "pnpm --filter vidpie build",
-    "test": "pnpm -r test"
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "typecheck": "tsc --build && tsc -p packages/vidpie/tsconfig.json && tsc -p packages/create-vidpie/tsconfig.json",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest run --reporter=default --reporter=json --outputFile.json=.vitest-report.json && node scripts/check-test-health.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.5",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^17.11.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^2.1.8"
   }
 }

@@ -3,3 +3,8 @@ dist
 .remotion
 out
 *.log
+*.tsbuildinfo
+.vitest-report.json
+
+# Design and planning notes, kept local for now.
+docs

@@ -1,0 +1,8 @@
+{
+  "$comment": "Solution file. `tsc --build` walks these; each package emits from its tsconfig.build.json.",
+  "files": [],
+  "references": [
+    { "path": "./packages/vidpie/tsconfig.build.json" },
+    { "path": "./packages/create-vidpie/tsconfig.build.json" }
+  ]
+}

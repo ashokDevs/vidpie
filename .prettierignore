@@ -1,0 +1,9 @@
+dist
+node_modules
+pnpm-lock.yaml
+.vitest-report.json
+
+# Markdown is written one sentence per line by hand. Prettier would reflow it.
+*.md
+docs
+.github/ISSUE_TEMPLATE

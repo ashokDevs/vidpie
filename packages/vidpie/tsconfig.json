@@ -1,0 +1,11 @@
+{
+  "$comment": "Editor and lint view of the package: covers tests too. Emitting is tsconfig.build.json's job.",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts"]
+}
