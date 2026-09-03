@@ -5,7 +5,14 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['**/dist/**', '**/node_modules/**', 'packages/*/templates/**'],
+    ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      'packages/*/templates/**',
+      // Fixtures are inputs to the stamp, not code we ship. Some are deliberately
+      // malformed, and linting them would mean writing them wrong on purpose twice.
+      '**/__fixtures__/**',
+    ],
   },
   eslint.configs.recommended,
   // Type-aware rules. The picker spawns processes, serves HTTP and drives

@@ -8,3 +8,6 @@ out
 
 # Design and planning notes, kept local for now.
 docs
+
+# Working notes on the implementation, kept local for now.
+NOTES.json
